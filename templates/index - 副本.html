@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QDII及时估值平台 </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+</head>
+<body>
+	<div id="app">
+		<h1> QDII及时估值平台 {{title}}</h1>
+		<table border="1" cellpadding=5 cellspacing=5>
+			<tr>
+				<td>#</td>
+				<td>标题</td>
+				<td>作者</td>
+				<td>定价</td>
+			</tr>
+			<tr v-for="book in books">
+				<td>[[book.id]]</td>
+				<td>[[book.title]]</td>
+				<td>[[book.author]]</td>
+				<td>[[book.price]]</td>
+			</tr>
+		</table>
+	</div>
+
+
+    <script>
+        var app = new Vue({
+			el: "#app",
+			data: {
+				books: []
+			},
+			delimiters: ["[[", "]]"],
+			mounted: function(){
+				this.fetchData();
+			},
+			methods: {
+				fetchData(){
+					this.$http.get("/api/books").then(rsp=>{
+						this.books = rsp.body
+					}, err=>{console.log('Error')});
+				}
+			}
+		});
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+2020-08-16 19:41:23,047 INFO [_internal]  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-08-16 19:41:27,557 INFO [_internal] 127.0.0.1 - - [16/Aug/2020 19:41:27] "GET / HTTP/1.1" 200 -
+2020-08-16 19:41:27,950 INFO [_internal] 127.0.0.1 - - [16/Aug/2020 19:41:27] "GET /fund_code/160416 HTTP/1.1" 200 -
+- ﻿BABA: No data found, symbol may be delisted
+2020-08-16 19:41:30,231 INFO [finance] Till 2020-08-14 history of ﻿BABA is 
+Empty DataFrame
+Columns: [Adj Close, Close, High, Low, Open, Volume]
+Index: []
+2020-08-16 19:41:35,484 INFO [finance] Till 2020-08-14 history of 3690.HK is 
+             Open   High    Low  Close    Volume  Dividends  Stock Splits
+Date                                                                     
+2020-08-11  225.0  227.0  216.8  218.4  24009014          0             0
+2020-08-12  218.0  218.0  202.6  213.8  30180144          0             0
+2020-08-13  220.2  220.2  211.0  211.4  13979730          0             0
+2020-08-14  212.2  226.0  209.2  219.8  20487910          0             0
+- 700.HK: No data found, symbol may be delisted
+2020-08-16 19:41:38,346 INFO [finance] Till 2020-08-14 history of 700.HK is 
+Empty DataFrame
+Columns: [Adj Close, Close, High, Low, Open, Volume]
+Index: []
+2020-08-16 19:41:42,487 INFO [finance] Till 2020-08-14 history of PDD is 
+             Open   High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                    
+2020-08-10  89.41  90.55  86.33  87.53  5482400          0             0
+2020-08-11  88.03  91.04  86.80  87.27  5623200          0             0
+2020-08-12  88.16  90.96  86.62  90.11  5413300          0             0
+2020-08-13  90.00  91.13  88.14  88.85  3559900          0             0
+2020-08-14  88.54  88.71  84.01  85.04  6053200          0             0
+2020-08-16 19:41:44,657 INFO [finance] Till 2020-08-14 history of JD is 
+             Open   High    Low  Close    Volume  Dividends  Stock Splits
+Date                                                                     
+2020-08-10  61.62  62.75  59.90  61.49  12736000          0             0
+2020-08-11  61.99  62.58  60.85  61.18  10213200          0             0
+2020-08-12  61.92  63.52  61.64  62.90   6934900          0             0
+2020-08-13  63.45  63.46  62.18  62.54   7453300          0             0
+2020-08-14  62.73  62.79  60.94  62.06  10241700          0             0
+2020-08-16 19:41:49,643 INFO [finance] Till 2020-08-14 history of VIPS is 
+             Open   High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                    
+2020-08-10  23.11  23.11  21.85  22.14  4151100          0             0
+2020-08-11  22.16  22.70  22.13  22.17  3911100          0             0
+2020-08-12  22.28  22.99  21.38  22.94  4770600          0             0
+2020-08-13  22.92  23.00  22.36  22.86  4790100          0             0
+2020-08-14  23.00  23.09  22.31  22.59  4907400          0             0
+2020-08-16 19:41:54,526 INFO [finance] Till 2020-08-14 history of NTES is 
+              Open    High     Low   Close  Volume  Dividends  Stock Splits
+Date                                                                       
+2020-08-10  464.44  465.99  453.32  456.38  543700          0             0
+2020-08-11  460.93  461.55  452.00  454.51  455500          0             0
+2020-08-12  456.08  476.97  456.08  474.53  523000          0             0
+2020-08-13  466.80  470.00  451.68  464.87  717400          0             0
+2020-08-14  465.12  468.10  458.36  461.39  384200          0             0
+2020-08-16 19:41:58,754 INFO [finance] Till 2020-08-14 history of TAL is 
+             Open   High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                    
+2020-08-10  76.50  76.56  73.44  74.00  3072600          0             0
+2020-08-11  73.73  76.68  72.66  74.89  3628500          0             0
+2020-08-12  75.09  75.60  73.73  75.57  1630700          0             0
+2020-08-13  75.63  78.20  75.63  77.11  2913500          0             0
+2020-08-14  76.35  76.42  73.11  73.58  2476000          0             0
+2020-08-16 19:42:00,819 INFO [finance] Till 2020-08-14 history of BILI is 
+             Open   High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                    
+2020-08-10  42.00  42.06  40.24  41.00  5301600          0             0
+2020-08-11  41.29  41.43  40.12  40.34  3668100          0             0
+2020-08-12  40.73  41.42  40.28  40.94  2644200          0             0
+2020-08-13  41.60  42.19  41.12  41.75  3805700          0             0
+2020-08-14  41.94  42.42  40.90  41.58  2891500          0             0
+- 241.HK: No data found, symbol may be delisted
+2020-08-16 19:42:04,086 INFO [finance] Till 2020-08-14 history of 241.HK is 
+Empty DataFrame
+Columns: [Adj Close, Close, High, Low, Open, Volume]
+Index: []
+2020-08-16 19:42:04,086 INFO [_internal] 127.0.0.1 - - [16/Aug/2020 19:42:04] "GET /fund_code/164906 HTTP/1.1" 200 -
+2020-08-16 19:42:06,196 INFO [finance] Till 2020-08-14 history of ﻿00700.HK is 
+Empty DataFrame
+Columns: [Adj Close, Close, High, Low, Open, Volume]
+Index: []
+- ﻿00700.HK: No data found, symbol may be delisted
+2020-08-16 19:42:09,643 INFO [finance] Till 2020-08-14 history of BABA is 
+              Open    High     Low   Close    Volume  Dividends  Stock Splits
+Date                                                                         
+2020-08-10  249.34  251.75  246.10  248.13  13621700          0             0
+2020-08-11  251.29  252.88  247.83  248.42  10681800          0             0
+2020-08-12  249.25  256.08  248.68  255.19  11120400          0             0
+2020-08-13  256.39  256.97  252.88  253.72   8794500          0             0
+2020-08-14  255.49  255.77  251.64  253.97   7869700          0             0
+- 03690.HK: No data found, symbol may be delisted
+2020-08-16 19:42:13,107 INFO [finance] Till 2020-08-14 history of 03690.HK is 
+Empty DataFrame
+Columns: [Adj Close, Close, High, Low, Open, Volume]
+Index: []
+2020-08-16 19:42:15,469 INFO [finance] Till 2020-08-14 history of JD is 
+             Open   High    Low  Close    Volume  Dividends  Stock Splits
+Date                                                                     
+2020-08-10  61.62  62.75  59.90  61.49  12736000          0             0
+2020-08-11  61.99  62.58  60.85  61.18  10213200          0             0
+2020-08-12  61.92  63.52  61.64  62.90   6934900          0             0
+2020-08-13  63.45  63.46  62.18  62.54   7453300          0             0
+2020-08-14  62.73  62.79  60.94  62.06  10241700          0             0
+2020-08-16 19:42:21,405 INFO [finance] Till 2020-08-14 history of PDD is 
+             Open   High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                    
+2020-08-10  89.41  90.55  86.33  87.53  5482400          0             0
+2020-08-11  88.03  91.04  86.80  87.27  5623200          0             0
+2020-08-12  88.16  90.96  86.62  90.11  5413300          0             0
+2020-08-13  90.00  91.13  88.14  88.85  3559900          0             0
+2020-08-14  88.54  88.71  84.01  85.04  6053200          0             0
+2020-08-16 19:42:26,942 INFO [finance] Till 2020-08-14 history of BIDU is 
+              Open    High     Low   Close    Volume  Dividends  Stock Splits
+Date                                                                         
+2020-08-10  124.55  127.66  123.97  125.06   3606500          0             0
+2020-08-11  125.23  127.79  124.37  124.60   2196100          0             0
+2020-08-12  126.23  128.25  125.83  126.11   2392600          0             0
+2020-08-13  126.67  126.83  124.04  124.57   5130300          0             0
+2020-08-14  118.40  118.57  115.59  116.74  11655800          0             0
+2020-08-16 19:42:29,616 INFO [finance] Till 2020-08-14 history of NTES is 
+              Open    High     Low   Close  Volume  Dividends  Stock Splits
+Date                                                                       
+2020-08-10  464.44  465.99  453.32  456.38  543700          0             0
+2020-08-11  460.93  461.55  452.00  454.51  455500          0             0
+2020-08-12  456.08  476.97  456.08  474.53  523000          0             0
+2020-08-13  466.80  470.00  451.68  464.87  717400          0             0
+2020-08-14  465.12  468.10  458.36  461.39  384200          0             0
+2020-08-16 19:42:37,375 INFO [finance] Till 2020-08-14 history of TAL is 
+             Open   High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                    
+2020-08-10  76.50  76.56  73.44  74.00  3072600          0             0
+2020-08-11  73.73  76.68  72.66  74.89  3628500          0             0
+2020-08-12  75.09  75.60  73.73  75.57  1630700          0             0
+2020-08-13  75.63  78.20  75.63  77.11  2913500          0             0
+2020-08-14  76.35  76.42  73.11  73.58  2476000          0             0
+2020-08-16 19:42:40,000 INFO [finance] Till 2020-08-14 history of TCOM is 
+             Open   High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                    
+2020-08-10  27.84  28.71  27.83  28.40  6805800          0             0
+2020-08-11  28.63  29.35  28.61  28.66  5365900          0             0
+2020-08-12  28.89  29.39  28.88  29.36  5218800          0             0
+2020-08-13  29.49  29.63  28.51  28.70  3307500          0             0
+2020-08-14  28.80  28.81  28.35  28.54  3297000          0             0
+2020-08-16 19:42:44,583 INFO [finance] Till 2020-08-14 history of VIPS is 
+             Open   High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                    
+2020-08-10  23.11  23.11  21.85  22.14  4151100          0             0
+2020-08-11  22.16  22.70  22.13  22.17  3911100          0             0
+2020-08-12  22.28  22.99  21.38  22.94  4770600          0             0
+2020-08-13  22.92  23.00  22.36  22.86  4790100          0             0
+2020-08-14  23.00  23.09  22.31  22.59  4907400          0             0
+2020-08-16 19:42:44,583 INFO [_internal] 127.0.0.1 - - [16/Aug/2020 19:42:44] "GET /fund_code/513050 HTTP/1.1" 200 -
+2020-08-16 19:42:44,585 INFO [_internal] 127.0.0.1 - - [16/Aug/2020 19:42:44] "GET /date HTTP/1.1" 200 -

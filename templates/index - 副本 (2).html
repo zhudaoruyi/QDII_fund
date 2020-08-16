@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> QDII基金及时估值平台 </title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+</head>
+<body>
+	<div id="app" style="margin-left: 100px; margin-right: 100px;">
+		<table class="table table-striped table-bordered table-hover table-condensed">
+			<caption>石油基金 160416</caption>
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>股票代码</th>
+					<th>股票名称</th>
+					<th>占净值比例(%)</th>
+					<th>权重(%)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="stock in stocks">
+					<td>[[stock.id]]</td>
+					<td>[[stock.code]]</td>
+					<td>[[stock.name]]</td>
+					<td>[[stock.percent]]</td>
+					<td>[[stock.weights]]</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-striped table-bordered table-hover table-condensed">
+			<caption>中国互联 164906</caption>
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>股票代码</th>
+					<th>股票名称</th>
+					<th>占净值比例(%)</th>
+					<th>权重(%)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="stock1 in stocks1">
+					<td>[[stock1.id]]</td>
+					<td>[[stock1.code]]</td>
+					<td>[[stock1.name]]</td>
+					<td>[[stock1.percent]]</td>
+					<td>[[stock1.weights]]</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-striped table-bordered table-hover table-condensed">
+			<caption>中概互联 513050</caption>
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>股票代码</th>
+					<th>股票名称</th>
+					<th>占净值比例(%)</th>
+					<th>权重(%)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="stock2 in stocks2">
+					<td>[[stock2.id]]</td>
+					<td>[[stock2.code]]</td>
+					<td>[[stock2.name]]</td>
+					<td>[[stock2.percent]]</td>
+					<td>[[stock2.weights]]</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+    <script>
+        var app = new Vue({
+			el: "#app",
+			data: {
+				stocks: [],
+				stocks1: [],
+				stocks2: [],
+			},
+			delimiters: ["[[", "]]"],
+			mounted: function(){
+				this.fetchData();
+			},
+			methods: {
+				fetchData(){
+					this.$http.get("/fund_code/160416").then(rsp=>{
+						this.stocks = rsp.body
+					}, err=>{console.log('Error')});
+					this.$http.get("/fund_code/164906").then(rsp=>{
+						this.stocks1 = rsp.body
+					}, err=>{console.log('Error')});
+					this.$http.get("/fund_code/513050").then(rsp=>{
+						this.stocks2 = rsp.body
+					}, err=>{console.log('Error')});
+				}
+			}
+		});
+    </script>
+</body>
+</html>
